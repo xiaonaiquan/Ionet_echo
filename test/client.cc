@@ -24,4 +24,9 @@ int main()
     }
     cout<<"connect successfully!"<<endl;
 
+    while (1)
+    {
+        /* code */
+    }
+    return 0;
 }

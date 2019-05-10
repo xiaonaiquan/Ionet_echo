@@ -31,8 +31,16 @@ namespace ionet
     void Fdevent::handler(int connfd)
     {
         if(readable && read_callback)
+        {
             read_callback(connfd);
+            return;
+        }
+            
         if(writeable && write_callback)
+        {
             write_callback(connfd);
+            return;
+        }
+           
     }
 }
